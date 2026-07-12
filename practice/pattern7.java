@@ -1,4 +1,4 @@
-public class pyramid
+public class pattern7
 {
     public static void main (String a[])
     {
@@ -15,5 +15,12 @@ public class pyramid
             }
             System.out.println();
         }
+            
+        
+    
+            
+        
+            
+        
     }
 }
