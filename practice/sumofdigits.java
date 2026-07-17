@@ -1,4 +1,4 @@
-public class reverse
+public class sumofdigits
 {
     public static void main(String a[])
     {
