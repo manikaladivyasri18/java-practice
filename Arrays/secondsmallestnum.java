@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class secondlargenum
+public class secondsmallestnum
 {
     public static void main(String a[])
     {
@@ -22,6 +22,9 @@ public class secondlargenum
                 }
             }
         }
-        System.out.println(arr[1]);
+        System.out.println(arr[n-2]);
+        
+
     }
+
 }
