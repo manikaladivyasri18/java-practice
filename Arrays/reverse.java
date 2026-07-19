@@ -12,7 +12,6 @@ public class reverse
         }
         for(int i=n-1;i>=0;i--)
         {
-            System.out.print( "Reverse Array is ");
             System.out.println(nums[i]);
         }
     }

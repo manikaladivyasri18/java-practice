@@ -10,6 +10,7 @@ public class sortedarray
         for(int i=0;i<n;i++)
         {
             arr1[i]=sc.nextInt();
+            arr2[i]=arr1[i];
         }
         for(int i=0;i<n-1;i++)
         {
@@ -17,21 +18,28 @@ public class sortedarray
             {
                 if(arr1[i]<arr1[j])
                 {
-                    arr2[j]=arr1[i];
-                    arr2[i]=arr1[j];
+                    int t=arr1[i];
+                    arr1[i]=arr1[j];
+                    arr1[j]=t;
                 }
 
             }
         }
+        boolean sorted=true;
         for(int i=0;i<n;i++)
         {
-            if(arr1[]==arr2[])
+            if(arr1[i]!=arr2[i])
             {
-               System.out.println("Sorted Array");
+               sorted=false;
+               break;
             }
-           else{
-              System.out.println("Not a Sorted array");
-            }
+        }
+        if(sorted)
+        {
+            System.out.println("Sorted array");
+        }
+        else{
+            System.out.println("Not Sorted array");
         }
             
     }
