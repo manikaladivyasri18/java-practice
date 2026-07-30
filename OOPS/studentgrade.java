@@ -17,45 +17,45 @@ class Student
         this.dbmsMarks=dbmsMarks;
 
     }
-    public String getMarks1()
+    public String getName()
     {
         return Name;
     }
-    public int getMarks2()
+    public int getrollno()
     {
         return rollno;
     }
-    public int getMarks3()
+    public int getpythonMarks()
     {
        return pythonMarks; 
     }
-    public int getMarks4()
+    public int getjavaMarks()
     {
         return javaMarks;
 
     }
-    public int getMarks5()
+    public int getdbmsMarks()
     {
         return dbmsMarks;
     }
-    public int getMarks6()
+    public int gettotalMarks()
     {
         return pythonMarks+javaMarks+dbmsMarks;
     }
-    public double getMarks7()
+    public double getaverageMarks()
     {
-        return getMarks6()/3.0;
+        return gettotalMarks()/3.0;
     }
     public void display()
     {
         System.out.println("------STUDENT DETAILS-----");
-        System.out.println("Name:"+getMarks1());
-        System.out.println("Rollno:"+getMarks2());
-        System.out.println("PythonMarks:"+getMarks3());
-        System.out.println("JavaMarks:"+getMarks4());
-        System.out.println("dbmsMarks:"+getMarks5());
-        System.out.println("TotalMarks:"+getMarks6());
-        System.out.println("AverageMarks:"+getMarks7());
+        System.out.println("Name:"+getName());
+        System.out.println("Rollno:"+getrollno());
+        System.out.println("PythonMarks:"+getpythonMarks());
+        System.out.println("JavaMarks:"+getjavaMarks());
+        System.out.println("dbmsMarks:"+getdbmsMarks());
+        System.out.println("TotalMarks:"+gettotalMarks());
+        System.out.println("AverageMarks:"+getaverageMarks());
 
 
 
@@ -78,16 +78,16 @@ public class studentgrade
             int dbmsMarks =sc.nextInt();
             s.setMarks(Name,rollno,pythonMarks,javaMarks,dbmsMarks);
             s.display();
-            if(s.getMarks7()>=90)
+            if(s.getaverageMarks()>=90)
             {
                 System.out.println("A");
 
             }
-            else if(s.getMarks7()>=75)
+            else if(s.getaverageMarks()>=75)
             {
                 System.out.println("B");
             }
-            else if(s.getMarks7()>=65)
+            else if(s.getaverageMarks()>=65)
             {
                 System.out.println("C");
             }
