@@ -7,6 +7,7 @@ public class Character
         String s=sc.next();
         for(int i=0;i<s.length();i++)
         {
+            
             System.out.println(s.charAt(i));
         }
 
