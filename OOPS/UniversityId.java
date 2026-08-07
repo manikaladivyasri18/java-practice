@@ -41,6 +41,7 @@ public class UniversityId
             String Branch=sc.nextLine();
             int Year=sc.nextInt();
             sc.nextLine();
+            students[i] = new Student(Name,Rollno,Branch,Year);
         }
         for(int i=0;i<3;i++)
         {
