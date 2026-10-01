@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Character
+public class MyCharacter
 {
     public static void main(String a[])
     {
@@ -12,4 +12,7 @@ public class Character
         }
 
     }
+
+    
+    
 }
