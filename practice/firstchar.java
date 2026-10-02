@@ -16,6 +16,7 @@ public class firstchar
             if(map.get(ch)==1)
             {
                 System.out.println(ch);
+                break;
             }
         }
     }
