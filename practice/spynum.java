@@ -3,7 +3,7 @@ public class spynum
     public static void main(String a[])
     {
         int n=123;
-        int ans1=1;
+        int ans1=1; 
         int ans2=0;
         while(n>0)
         {
